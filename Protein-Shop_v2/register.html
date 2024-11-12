@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Protein Shop | Register your account</title> 
+    </head>
+    <body>
+        <header>
+            Create your account now and get 20% off!  
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container ms-auto me-auto">
+              <a class="navbar-brand" href="index.html">ProTex</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Sale</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Whey Isolate</a></li>
+                      <li><a class="dropdown-item" href="#">Whey Concentrate</a></li>   
+                      <li><a class="dropdown-item" href="#">Whey Hydrolysate</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="info.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex align-items-center ms-1 ms-md-3 me-md-3">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn" type="submit">Search</button>
+                  <div class="btn-seperator ms-3 me-3"></div>
+                  <a href="login.html " class="btn btn-custom">Login/Register</a>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <br> <br> 
+        <br> <br>
+        <section>
+            <div class="container container-mobile">
+            <form class="registration mx-auto" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <h4 class="text-center">Registration</h1>
+                    <div class="mb-3_reg">
+                <label for="first_name" class="form-label">First Name: </label>
+                <input type="text" id="first_name" name="first_name" class="form-control" required> <br>
+                <label for="last_name" class="form-label">Last Name: </label>
+                <input type="text" id="last_name" name="last_name" class="form-control" required> <br>
+                <label for="date_of_birth" class="form-label">Date of Birth: </label>
+                <input type="date" id="date_of_birth" name="date_of_birth" min="18" class="form-control" required> <br>
+                <label for="gender" class="form-label">Gender: </label> <br>
+                <div class="form-check">
+                <input type="radio" name="gender" id="gender" value="male" class="form-check-input">
+                <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                <input type="radio" name="gender" id="gender" value="female" class="form-check-input">
+                <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check">
+                <input type="radio" name="gender" id="gender" value="other" class="form-check-input">
+                <label class="form-check-label" for="other">Other</label>
+                </div>
+                <label for="email" class="form-label">Email: </label>
+                <input type="email" id="email" name="email" class="form-control" required> <br>
+                <label for="username_reg" class="form-label">Username</label>
+                <input type="text" id="username_reg" id="username_reg" class="form-control" required> <br>
+                <label for="password_reg" class="form-label">Password: </label>
+                <input type="password" name="password_reg" id="password_reg" class="form-control" required minlength="8"> <br>
+                <label for="tel_number" class="form-label">Telephone Number: </label>
+                <input type="tel" id="tel_number" name="tel_number" class="form-control" required> <br>
+                <label for="country" class="form-label">Country: </label>
+                <input type="text" name="country" id="country" class="form-control" required> <br>
+                <label for="city" class="form-label">City</label>
+                <input type="text" name="city" id="city" class="form-control" required> <br>
+                <label for="address" class="form-label">Address: </label>
+                <input type="text" name="address" id="address" class="form-control" required> <br>
+                </div>
+                <button type="submit" class="btn btn-danger_reg mt-4 w-100">Register</button>
+            </form>
+        </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <footer class="footer">
+          <div class="container-footer">
+              <div class="row_fot">
+                  <div class="col-fot">
+                      <h4>Company</h4>
+                      <ul>
+                          <li><a href="info.html">About Us</a></li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                          <li><a href="info.html">Employees</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-fot">
+                      <h4>Get Help</h4>
+                      <ul>
+                          <li><a href="contact.html">Write us an mail</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-fot">
+                      <h4>Online Shop</h4>
+                      <ul>
+                          <li><a href="">SALE</a></li>
+                          <li><a href="">Whey Isolate</a></li>
+                          <li><a href="">Whey Concentrate</a></li>
+                          <li><a href="">Whey Hydrolysate</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-fot">
+                      <h4>Follow us</h4>
+                      <div class="social-links">
+                          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="mailto:protex@gmail.xom"><i class="fas fa-envelope"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    </body>
+</html>
