@@ -9,7 +9,7 @@
         <title>Protein Shop | Products</title>
     </head>
     <body>
-        <header>Strenght, Recovery and Performance in every scoop</header>
+        <header style="font-size: 18px;">Buy any 2 products and get a <strong>FREE SHAKER!</strong></header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container ms-auto me-auto">
               <a class="navbar-brand" href="index.html">ProTex</a>
@@ -21,17 +21,14 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Sale</a>
-                  </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Products
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Whey Isolate</a></li>
-                      <li><a class="dropdown-item" href="#">Whey Concentrate</a></li>   
-                      <li><a class="dropdown-item" href="#">Whey Hydrolysate</a></li>
+                      <li><a class="dropdown-item" href="products.html#whey-concentrate">Whey Concentrate</a></li>
+                      <li><a class="dropdown-item" href="products.html#whey-isolate">Whey Isolate</a></li>   
+                      <li><a class="dropdown-item" href="products.html#whey-hydrolysate">Whey Hydrolysate</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -51,7 +48,191 @@
             </div>
           </nav>
         <br> <br>
-        <br> <br>
+        <section class="modal-button justify-content-center">
+          <div class="container">
+            <button class="btn btn-danger" data-bs-toggle ="modal" data-bs-target="#shakerModal">
+              GET A FREE SHAKER!
+            </button>
+          </div>
+        </section>
+        <div class="modal fade" id="shakerModal" tabindex="-1" aria-labelledby="shakerModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="shakerModalLabel">GET A FREE SHAKER!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <p>Buy any two products today, and get a free shaker sent to your address for insane gains!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="whey-concentrate" class="whey-concentrate section-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                  <h1>Whey Concentrate</h1>
+                  <p>Pure perfomance, every scoop</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-concentrate.jpg" alt="Whey Concentrate" class="img-fluid">
+                    <h2>ProTex Limitless Alpha Whey Concentrate Protein <br> 800g</h2>
+                    <h3 class="card-title py-2">49.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-concentrate2.jpg" alt="Whey Concentrate" class="img-fluid">
+                    <h2>ProTex Premium Nutrition Whey Concentrate Protein <br> 1500g</h2>
+                    <h3 class="card-title py-2">89.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-concentrate3.jpg" alt="Whey Concentrate" class="img-fluid">
+                    <h2>ProTex Muscle Pharm Whey Concentrate Protein <br> 500g</h2>
+                    <h3 class="card-title py-2">34.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-concentrate4.jpg" alt="Whey Concentrate" class="img-fluid">
+                    <h2>ProTex Nutrend 100% Whey Concentrate Protein <br> 2500g</h2>
+                    <h3 class="card-title py-2">99.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="whey-isolate" class="whey-isolate section-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                  <h1>Whey Isolate</h1>
+                  <p>Maximum protein, zero compromise</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-isolate.jpg" alt="Whey Isolate" class="img-fluid">
+                    <h2>ProTex Muscle Freak Whey Isolate Protein <br>500g</h2>
+                    <h3 class="card-title py-2">44.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-isolate2.jpg" alt="Whey Isolate" class="img-fluid">
+                    <h2>ProTex SciTec Nutrition Whey Isolate Protein <br>1500g</h2>
+                    <h3 class="card-title py-2">89.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-isolate3.jpg" alt="Whey Isolate" class="img-fluid">
+                    <h2>ProTex Muscle Tech Whey Isolate Protein <br>1800g</h2>
+                    <h3 class="card-title py-2">94.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-isolate4.jpg" alt="Whey Isolate" class="img-fluid">
+                    <h2>ProTex Optimum Nutrition Whey Isolate Protein <br> 2500g</h2>
+                    <h3 class="card-title py-2">119.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="whey-hydrolysate" class="whey-hydrolysate section-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                  <h1>Whey Hydrolysate</h1>
+                  <p>Faster absorption, faster results</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-hydrolysate.jpg" alt="Whey Hydrolysate" class="img-fluid">
+                    <h2>ProTex Dion Sportslab Whey Hydrolysate Protein <br> 1200g</h2>
+                    <h3 class="card-title py-2">79.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-hydrolysate2.jpg" alt="Whey Hydrolysate" class="img-fluid">
+                    <h2>ProTex Cafe Bevarabia Whey Hydrolysate Protein <br> 2000g</h2>
+                    <h3 class="card-title py-2">109.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-hydrolysate3.jpg" alt="Whey Hydrolysate" class="img-fluid">
+                    <h2>ProTex Named Sport Whey Hydrolysate Protein <br> 750g</h2>
+                    <h3 class="card-title py-2">54.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img src="pictures/reg-hydrolysate4.jpg" alt="Whey Hydrolysate" class="img-fluid">
+                    <h2>ProTex Designers For Sport Whey Hydrolysate Protein <br> 2500g</h2>
+                    <h3 class="card-title py-2">149.99$</h3>
+                    <button class="btn btn-danger text-dark">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <footer class="footer">
           <div class="container-footer">
@@ -61,7 +242,6 @@
                       <ul>
                           <li><a href="info.html">About Us</a></li>
                           <li><a href="contact.html">Contact Us</a></li>
-                          <li><a href="info.html">Employees</a></li>
                       </ul>
                   </div>
                   <div class="col-fot">
@@ -73,10 +253,9 @@
                   <div class="col-fot">
                       <h4>Online Shop</h4>
                       <ul>
-                          <li><a href="">SALE</a></li>
-                          <li><a href="">Whey Isolate</a></li>
-                          <li><a href="">Whey Concentrate</a></li>
-                          <li><a href="">Whey Hydrolysate</a></li>
+                        <li><a href="products.html#whey-concentrate">Whey Concentrate</a></li>
+                        <li><a href="products.html#whey-isolate">Whey Isolate</a></li>
+                        <li><a href="products.html#whey-hydrolysate">Whey Hydrolysate</a></li>
                       </ul>
                   </div>
                   <div class="col-fot">
@@ -85,10 +264,11 @@
                           <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                           <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
                           <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                          <a href="mailto:protex@gmail.xom"><i class="fas fa-envelope"></i></a>
+                          <a href="mailto:amela.vatres@stu.ibu.edu.ba"><i class="fas fa-envelope"></i></a>
                       </div>
                   </div>
               </div>
+              <p>Foundations of Web Development - <i>Danin Mangafic</i></p>
           </div>
       </footer>
     </body>

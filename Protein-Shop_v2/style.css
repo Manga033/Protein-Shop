@@ -1,15 +1,16 @@
 *{
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.7;
     background-color: #808080;
 }
-/* NAVBAR */
 .navbar{
-    background-color: #343434!important;;
+    background-color: #343434!important;
 }
 .navbar-brand{
     color: #D2042D!important;
@@ -19,6 +20,7 @@ body{
 .navbar-nav .nav-link{
     color: #D2042D!important;
     font-size: 20px;
+    transition: background-color 0.3 ease;
 }
 .navbar-nav .nav-link:hover{
     color: #ff4d4d !important;
@@ -26,6 +28,7 @@ body{
 .btn{
     color: #D2042D;
     border-color: #D2042D;
+    transition: background-color 0.3 ease;
 }
 .btn:hover{
     background-color: #D2042D;
@@ -34,6 +37,7 @@ body{
 .btn-custom{
     color: #D2042D;
     border-color: #D2042D;
+    transition: background-color 0.3 ease;
 }
 .btn-custom:hover{
     background-color: #D2042D;
@@ -50,16 +54,13 @@ body{
 }
 @media (max-width: 991px) {
     .navbar-collapse {
-      flex-grow: 0; /* Prevent navbar from collapsing */
+      flex-grow: 0; 
     }
   }
-
-  /* Ensure that the navbar items stay on one line */
   .navbar-nav {
-    flex-wrap: nowrap; /* Prevent wrapping of items */
+    flex-wrap: nowrap;
   }
 
-  /* For smaller screens (tablets, etc.), make navbar items take full width */
   @media (max-width: 1200px) {
     .navbar-nav {
       justify-content: space-between;
@@ -71,6 +72,7 @@ body{
   }
   .dropdown-item{
     color: #D2042D;
+    transition: background-color 0.3 ease;
   }
   .dropdown-item:hover{
     background-color: #D2042D;
@@ -110,6 +112,7 @@ body{
 .sign_up{
     text-decoration: none;
     color: #D2042D;
+    transition: background-color 0.3 ease;
 }
 .sign_up:hover{
     color:#ff4d4d;
@@ -144,12 +147,13 @@ body{
 .mb-3_reg {
     margin-bottom: 1.5rem;
 }
-.btn-danger_reg {
+.registration .btn {
     background-color: #dc3545;
     color: #343434;
     border-radius: 50px;
     border: none;
     transition: background-color 0.3 ease;
+    height: auto;
 }
 .btn-danger_reg:hover {
     background-color: #c82333;
@@ -353,4 +357,298 @@ body{
     .col-fot {
         width: 100%;    
     }
+}
+.section-padding {
+    padding: 100px 0;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background: rgba(0,0,0,0.7);  
+    z-index: 1;
+}
+.w-100 {
+    height: 100vh;
+}
+@media  only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+    .carousel-caption p {
+        width: 100%;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .img-area img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+}
+.card {
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.25);
+    background-color: rgb(99, 99, 99);
+    border-radius: 20px;
+}
+.products-hp {
+    font-weight: 700;
+    font-size: 40px;
+}
+.card-body h3 {
+    font-weight: 800;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.card-body p {
+    font-size: 17px;
+}
+.wheys .btn {
+    background-color: #dc3545;
+    transition: background-color 0.3 ease;
+}
+.wheys .btn:hover {
+    background-color: #c82333;
+}
+.checked {
+    color: #FFD700;
+}
+.reviews .card-body {
+    font-size: 20px ;
+}
+.reviews p {
+    color: white;
+}
+.reviews h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+}
+.purpose h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.purpose p {
+    text-align: center;
+    font-size: 20px;
+}
+.commitment h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.commitment p {
+    text-align: center;
+    font-size: 20px;
+}
+.purpose {
+    padding-bottom: 5px;
+}
+.protex-table{
+    padding-bottom: 5px;
+}
+.protex-table h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+.table {
+    text-align: center;
+}
+.table thead {
+    font-size: 25px;
+    font-weight: 800;
+}
+.table tbody {
+    font-size: 15px;
+}
+.table td {
+    padding: 15px;
+}
+.prom-video {
+    padding-bottom: 5px;
+}
+.prom-video h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.prom-video video {
+    width: 100%;
+    height: auto;
+}
+.whey-concentrate h1 {
+    font-size: 50px;
+    font-weight: 700;   
+}
+.whey-concentrate h2 {
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+.whey-concentrate p {
+    font-size: 20px;
+    font-style: italic;
+}
+.whey-isolate h1 {
+    font-size: 50px;
+    font-weight: 700;  
+}
+.whey-isolate h2 {
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+.whey-isolate p {
+    font-size: 20px;
+    font-style: italic;
+}
+.whey-hydrolysate h1 {
+    font-size: 50px;
+    font-weight: 700;  
+}
+.whey-hydrolysate h2 {
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+.whey-hydrolysate p {
+    font-size: 20px;
+    font-style: italic;
+}
+.carousel-caption .btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    animation: pulse 1.5s infinite;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0px rgba(220, 53, 69, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(220, 53, 69, 0.8);
+    }
+}
+.wheys .btn {
+    color: #D2042D;
+    border-color: #D2042D;
+    transition: background-color 0.3s, transform 0.3s ease;;
+}
+.wheys .btn:hover {
+    background-color: #dc3545;
+    color: black;
+    transform: scale(1.1);
+}
+.whey-concentrate .btn {
+    color: #D2042D;
+    border-color: #D2042D;
+    transition: background-color 0.3s, transform 0.3s ease;;
+}
+.whey-concentrate .btn:hover {
+    background-color: #dc3545;
+    color: black;
+    transform: scale(1.1);
+}
+.whey-isolate .btn {
+    color: #D2042D;
+    border-color: #D2042D;
+    transition: background-color 0.3s, transform 0.3s ease;;
+}
+.whey-isolate .btn:hover {
+    background-color: #dc3545;
+    color: black;
+    transform: scale(1.1);
+}
+.whey-hydrolysate .btn {
+    color: #D2042D;
+    border-color: #D2042D;
+    transition: background-color 0.3s, transform 0.3s ease;;
+}
+.whey-hydrolysate .btn:hover {
+    background-color: #dc3545;
+    color: black;
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .index-header {
+        line-height: 1;
+    }
+}
+.container-footer p {
+    text-align: center;
+    color: #bbbbbb;
+    padding-top: 70px;
+}
+.btn-modal {
+    background-color: #c82333;
+    border-radius: 0;
+}
+.modal-button .container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px ;
+}
+.modal-button .btn {
+    border-radius: 0%;
+    width: auto;
+    height: 50px;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.modal-button .btn {
+    animation: shake 1s ease-in-out infinite ;
 }
