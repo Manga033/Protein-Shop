@@ -458,6 +458,7 @@ body{
     font-size: 20px ;
 }
 .reviews p {
+    display: none   ;
     color: white;
 }
 .reviews h2 {
@@ -651,4 +652,151 @@ body{
 }
 .modal-button .btn {
     animation: shake 1s ease-in-out infinite ;
+}
+.container-gallery {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 10px;
+}
+.gallery img {
+    width: 100%;
+}
+.gallery-h1 {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 120px;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.container-gallery .pop-image {
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.container-gallery .pop-image span {
+    position: absolute;
+    top: 50px; right: 20px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 300;
+}
+.container-gallery .pop-image img {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .container-gallery .pop-image img{
+        width: 95%;
+    }
+}
+.card-body button {
+    background-color: #D2042D;
+    border-color: #D2042D;
+    transition: background-color 0.3s, transform 0.3s ease;;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 100;
+}
+.card-body button:hover {
+    background-color: #dc3545;
+    color: black;
+    transform: scale(1.1);
+}
+.accordion {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.accordion-item {
+    background-color: rgb(99, 99, 99);
+    border-radius: 10px;
+    border-color: rgb(99, 99, 99);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.accordion-title {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+}
+.accordion-title::after {
+    content: "+";
+    font-size: 40px;
+    margin-left: auto;
+}
+.active-header::after {
+    content: "-";
+}
+.accordion-answer {
+    margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1000ms ease max-height;
+}
+.accordion h1 {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.more-text {
+    display: none;
+}
+#view-more-button {
+    border-radius: 20px;
+    font-size: 10px;
+    background-color: #dadadab9
+}
+#message-pass {
+    font-weight: 800;
+    position: absolute;
+    bottom: -110px;
+    color: #343434;
+    font-size: 15px;
+    display: none;
+}
+.mb-3_reg span {
+    position: block;
+    bottom: 5px;
+    font-size: 14px;
+    color: red;
+}
+#submit-error {
+    color: red;
+}
+.mb-3_reg span i {
+    color: seagreen;
+}
+.log_in span {
+    position: block;
+    bottom: 5px;
+    font-size: 14px;
+    color: red;
+}
+.log_in span i {
+    color: seagreen;
 }
